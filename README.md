@@ -12,7 +12,7 @@ npm install --save mem-store
 var MemStore = require('mem-store');
 var Fluxxor = require('fluxxor');
 
-var MyStore = MemStore();
+var MyStore = MemStore('people');
 
 var actions = {...};
 var stores = { MyStore: MyStore };
