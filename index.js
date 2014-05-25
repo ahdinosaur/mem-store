@@ -19,19 +19,19 @@ module.exports = function (name) {
 
     onCreate: function (data) {
       debug(name, "-store.onCreate", data);
-      this[name][data.id] = circle;
+      this[name][data.id] = data;
       this.emit("change");
     },
 
     onUpdate: function (data) {
       debug(name, "-store.onUpdate", data);
-      this[name][data.id] = circle;
+      this[name][data.id] = data;
       this.emit("change");
     },
 
     onPatch: function (data) {
       debug(name, "-store.onPatch", data);
-      this[name][data.id] = circle;
+      this[name][data.id] = data;
       this.emit("change");
     },
 
